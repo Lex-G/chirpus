@@ -1,0 +1,152 @@
+/* resets */
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #69696a;
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+
+.accent {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.call-to-action {
+  border-left: 3px solid black;
+  padding-left: 10px;
+}
+
+.call-to-action-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(247, 193, 162, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer a {
+  padding: 5px 0 5px 5px;
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 786px) {
+  header {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  header li {
+    display: inline;
+  }
+
+  .accent {
+    width: 25%;
+    display: inline;
+    height: 20px;
+    padding-right: 0;
+    text-align: center;
+    font-size: smaller;
+  }
+
+  .call-to-action {
+    width: 50%;
+  }
+
+  .call-to-action-link {
+    width: 50%;
+    float: left;
+  }
+
+  .desktop-only {
+    position: relative;
+  }
+
+  .small {
+    top: 30%;
+    width: 85px;
+    height: 85px;
+    right: 2%;
+    position: absolute;
+    border: solid rgba(207, 130, 213, 0.6);
+    background-color: rgba(207, 130, 213, 0.6);
+    border-radius: 100%;
+  }
+
+  .medium {
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    right: 5%;
+    top: 37%;
+    border: solid rgba(247, 193, 162, 0.7);
+    background-color: rgba(247, 193, 162, 0.7);
+    border-radius: 100%;
+  }
+
+  .large {
+    height: 175px;
+    width: 175px;
+    position: absolute;
+    right: 5%;
+    top: 22%;
+    border: rgba(247, 136, 167, 0.6);
+    background-color: rgba(247, 136, 167, 0.6);
+    border-radius: 100%;
+  }
+
+  footer {
+    height: 8px;
+  }
+
+  footer ul {
+    right: 0;
+  }
+}
